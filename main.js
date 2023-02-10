@@ -1,7 +1,9 @@
 let container = document.getElementById("container");
+let img = document.createElement("img")
+
 
 const productos = [
-  { id: 1, nombre: "Paleta de Sombras Dior", precio: 3000 },
+  { id: 1, nombre: "Paleta de Sombras Dior", precio: 3000},
   { id: 2, nombre: "Labial Mac", precio: 2700 },
   { id: 3, nombre: "Rubor en crema", precio: 2350 },
   { id: 4, nombre: "Rimmel Maybelline", precio: 5500 },
@@ -15,7 +17,7 @@ productos.forEach(item => {
     <p>Nombre: ${item.nombre}</p>
     <b>$${item.precio}</b>
     <button class="button">"Comprar"</button>
-  `;
-
+    `;
+ 
   container.append(div);
 });
